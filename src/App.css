@@ -1,38 +1,141 @@
-.App {
+* {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+h1 {
+  font-weight: 900;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+.navbar-brand, .nav-item {
+  text-transform: uppercase;
+}
+
+
+.header-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.4)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header-title {
+  position: absolute;
+  z-index: 2;
   color: white;
+  top: 45%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.header-subtitle {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top:60%;
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 25px; */
+  font-weight: 700;  
+  width: 100%;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.notable-projects {
+  padding: 60px 0px;
+  background-color: rgb(34, 30, 30);
+}
+
+.projects-title {
+  color: aliceblue;
+}
+
+.card {
+  transition: 0.5s;
+  position: relative;
+}
+
+
+.card:hover {
+  transform: translateY(-18px);
+  transition: 0.5s;
+}
+
+/* .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: 50px 50px 50px 180px;
+} */
+
+.more-projects {
+  text-align: center;
+  width: 30%;
+}
+
+.experience {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.recoded-text, .flatiron-text {
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* .flatiron, .recoded {
+  text-align: center;
+} */
+
+.flatiron-image, .recoded-image {
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+}
+
+/* .container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+/* @media screen and (max-width: 1118px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 842px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
+} */
+
+.contact{
+  background-color: rgb(34, 30, 30);
+}
+
+.contact-title, .name, .city, .email {
+  color: aliceblue;
 }
