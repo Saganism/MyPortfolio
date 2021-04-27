@@ -65,7 +65,7 @@ export default class MyProjects extends Component {
         </div>
         <a
           href="http://github.com/Saganism"
-          class="btn btn-light"
+          class="btn btn-dark"
           target="_blank"
         >
           Find more

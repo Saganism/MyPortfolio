@@ -1,14 +1,12 @@
 import React, { Component } from "react";
-import MyProjects from './MyProjects';
-import CodingExperience from './CodingExperience';
-import HeaderPhoto from './HeaderPhoto'
+
 
 
 export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#Home">
               My Portfolio
